@@ -4,4 +4,11 @@
     ViewData["Title"] = "Home page";
 }
 
-<h1>Hello World</h1>
+<h1>Tic Tac Toe</h1>
+<div id="grid">
+    @for (int i = 0; i < 9; i++)
+    {
+        <div id="square-@i" class="square"></div>
+    }
+</div>
+<div id="turn"></div>
